@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Week</title>
+</head>
+<body>
+    <h1>What's going on this week</h1>
+    <ul>
+        <% thisWeek.forEach(function(t) { %>
+            <li>
+                <%= t.day %>: <br>
+                <%= t.tasks %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
